@@ -1,0 +1,83 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+
+ .atmc_event_edit_fieldwrap{
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+ .atmc_event_edit_field_label{
+    padding-bottom: 5px;
+ }
+
+ .atmc_admin_date_time_container{
+
+ }
+ .atmc_admin_date_time_wrapper{
+
+ }
+ .atmc_admin_date_time_container {
+    white-space: nowrap; /* Prevents wrapping */
+}
+.atmc_admin_date_time_wrapper {
+    display: inline-block; /* Displays the divs inline */
+    margin-right: 10px; /* Adjust the spacing between the divs */
+    vertical-align: top; /* Aligns the divs vertically */
+}
+
+
+
+ /**
+ ONOFSWITCH
+ // https://proto.io/freebies/onoff/
+ */
+
+ .onoffswitch {
+    position: relative; width: 75px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 1px solid #999999; border-radius: 14px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 24px; padding: 0; line-height: 24px;
+    font-size: 13px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "Yes";
+    padding-left: 16px;
+    background-color: #4FB845; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "No";
+    padding-right: 16px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 16px; margin: 4px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 47px;
+    border: 1px solid #999999; border-radius: 14px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
